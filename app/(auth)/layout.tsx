@@ -1,0 +1,11 @@
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
+  return (
+    <div className="flex justify-center items-center h-full container">
+      {children}
+    </div>
+  );
+}
