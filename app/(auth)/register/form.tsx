@@ -75,9 +75,9 @@ export default function RegisterForm() {
   }
 
   return (
-    <Card className="container mx-auto max-w-md px-4 py-10 bg-white shadow rounded-md dark:bg-gray-800 sm:px-6 md:px-8">
-      <CardHeader>
-        <h1 className="text-3xl font-bold text-center">新規登録</h1>
+    <Card className="container mx-auto max-w-md px-0 py-10 bg-white border-none shadow-none md:border md:shadow md:rounded-md dark:bg-gray-800 sm:px-6 md:px-8">
+      <CardHeader className="p-2">
+        <h1 className="text-xl md:text-3xl font-bold text-center">新規登録</h1>
       </CardHeader>
       <CardContent className="space-y-6">
         <Form {...form}>
@@ -92,11 +92,7 @@ export default function RegisterForm() {
                 <FormItem>
                   <FormLabel>Eメール</FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder="メールアドレスを入力してください"
-                      autoComplete="email"
-                      {...field}
-                    />
+                    <Input autoComplete="email" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -111,7 +107,6 @@ export default function RegisterForm() {
                   <FormControl>
                     <Input
                       type="password"
-                      placeholder="パスワードを入力してください"
                       autoComplete="current-password"
                       {...field}
                     />

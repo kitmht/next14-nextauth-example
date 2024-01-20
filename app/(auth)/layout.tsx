@@ -4,8 +4,6 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex justify-center items-center h-full container">
-      {children}
-    </div>
+    <div className="flex justify-center items-center h-full">{children}</div>
   );
 }
